@@ -1,0 +1,20 @@
+{
+  "name": "issue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^5.17.0",
+    "@types/node": "^20.14.11",
+    "typescript": "^5.5.4"
+  },
+  "devDependencies": {
+    "prisma": "^5.17.0"
+  }
+}

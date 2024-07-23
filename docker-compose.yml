@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  prisma-issue-db:
+    container_name: prisma-issue-db
+    image: postgres:15
+    hostname: prisma-issue-db
+    environment:
+      - POSTGRES_DB=prisma-issue
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "${CONTAINER_DB_PORT}:5432"
+    networks:
+      - prisma_issue
+    env_file:
+      - .env
+
+networks:
+  prisma_issue:
+    name: prisma_issue
+    driver: bridge
